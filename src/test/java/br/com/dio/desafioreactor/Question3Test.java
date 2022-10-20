@@ -28,7 +28,7 @@ public class Question3Test {
     @Test
     void validUser(){
         StepVerifier.create(question3.userIsValid(new User(1L, faker.name().name(), faker.internet().emailAddress(),
-                        faker.lorem().characters(8, 255), faker.bool().bool())))
+                        faker.lorem().characters(9, 255), faker.bool().bool())))
                 .verifyComplete();
     }
 
